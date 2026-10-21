@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QuickBite - Order status</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">QuickBite</a>
+    <nav>
+      <a href="index.html">Restaurants</a>
+      <a href="cart.html">Cart</a>
+      <a href="dashboard.html">Staff dashboard</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 id="title">Your order</h1>
+    <div id="error" class="message error hidden"></div>
+
+    <div id="order" class="card hidden">
+      <div class="row">
+        <h2 id="restaurant"></h2>
+        <span class="muted">Pickup at <strong id="pickup"></strong></span>
+      </div>
+      <div id="steps" class="status-steps"></div>
+      <table><tbody id="items"></tbody></table>
+      <p class="row"><strong>Total</strong><strong id="total"></strong></p>
+      <p class="muted">This page updates automatically.</p>
+    </div>
+  </main>
+
+  <script type="module" src="js/order-status.js"></script>
+</body>
+</html>

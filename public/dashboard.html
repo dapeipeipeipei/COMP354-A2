@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QuickBite - Staff dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">QuickBite</a>
+    <nav>
+      <a href="index.html">Restaurants</a>
+      <a href="cart.html">Cart</a>
+      <a href="dashboard.html">Staff dashboard</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Restaurant dashboard</h1>
+    <div class="row">
+      <div>
+        <label for="restaurant">Restaurant</label>
+        <select id="restaurant"></select>
+      </div>
+      <label><input type="checkbox" id="show-completed"> Show completed</label>
+    </div>
+    <div id="error" class="message error hidden"></div>
+    <div id="orders"></div>
+  </main>
+
+  <script type="module" src="js/dashboard.js"></script>
+</body>
+</html>
