@@ -3,16 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>QuickBite</title>
+  <title>QuickBite - Restaurants</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
     <a class="logo" href="index.html">QuickBite</a>
+    <nav>
+      <a href="index.html">Restaurants</a>
+      <a href="cart.html">Cart</a>
+      <a href="dashboard.html">Staff dashboard</a>
+    </nav>
   </header>
+
   <main>
-    <h1>QuickBite</h1>
-    <p class="muted">Project skeleton. Pages are added by each module.</p>
+    <h1>Order for pickup</h1>
+    <p class="muted">Choose a restaurant to see its menu.</p>
+    <div id="error" class="message error hidden"></div>
+    <div id="restaurant-list"></div>
   </main>
+
+  <script type="module" src="js/restaurants.js"></script>
 </body>
 </html>

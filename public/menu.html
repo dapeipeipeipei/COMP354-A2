@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QuickBite - Menu</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">QuickBite</a>
+    <nav>
+      <a href="index.html">Restaurants</a>
+      <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+      <a href="dashboard.html">Staff dashboard</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1 id="restaurant-name">Menu</h1>
+    <p id="restaurant-info" class="muted"></p>
+    <div id="message" class="message hidden"></div>
+    <div id="menu-items"></div>
+    <a href="cart.html"><button>Go to cart</button></a>
+  </main>
+
+  <script type="module" src="js/menu.js"></script>
+</body>
+</html>
