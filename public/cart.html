@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QuickBite - Cart</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">QuickBite</a>
+    <nav>
+      <a href="index.html">Restaurants</a>
+      <a href="cart.html">Cart</a>
+      <a href="dashboard.html">Staff dashboard</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Your cart</h1>
+
+    <div id="empty" class="card hidden">
+      Your cart is empty. <a href="index.html">Browse restaurants</a>
+    </div>
+
+    <div id="cart" class="card hidden">
+      <h2 id="cart-restaurant"></h2>
+      <table>
+        <thead>
+          <tr><th>Item</th><th>Price</th><th>Quantity</th><th>Subtotal</th><th></th></tr>
+        </thead>
+        <tbody id="cart-items"></tbody>
+      </table>
+      <p class="row"><strong>Total</strong><strong id="cart-total"></strong></p>
+    </div>
+
+    <form id="checkout" class="card hidden">
+      <h2>Checkout</h2>
+      <label for="customer-name">Your name</label>
+      <input id="customer-name" maxlength="50" required>
+
+      <label for="pickup-time">Pickup time</label>
+      <select id="pickup-time"></select>
+
+      <div id="error" class="message error hidden"></div>
+      <p><button id="place-order" type="submit">Place order</button></p>
+    </form>
+  </main>
+
+  <script type="module" src="js/checkout.js"></script>
+</body>
+</html>
